@@ -94,14 +94,14 @@
         }
 
         .hubungi-kami:hover {
-            background-color: rgba(223, 218, 218, 0.784);
-            color: white;
+            background-color: rgb(137, 137, 137);
+            color: black;
         }
 
         .gambar-konten {
             width: 100%;
             height: 700px;
-            background: linear-gradient(to right, rgb(255, 255, 255)0%, white 35%, rgba(255, 255, 255, 0.868)75%, rgba(255, 225, 172, 0.156)), url('bg.jpg');
+            background: linear-gradient(to right, #0F2A44 0%, #0f2a44b2 40%, #0f2a442a 100%), url('bg.jpg');
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
@@ -113,30 +113,40 @@
             margin-left: 145px;
             font-weight: normal;
             font-size: 45px;
+            color: white;
         }
 
         .text1-konten {
             margin-top: 20px;
             font-weight: normal;
             margin-left: 145px;
-            font-size: 16.7px;
+            font-size: 18px;
+            color: white;
         }
 
         .text2-konten {
             margin-top: 5px;
             font-weight: normal;
             margin-left: 145px;
-            font-size: 16.7px;
+            font-size: 18px;
+            color: white;
+        }
+
+        .room {
+            flex-direction: row;
+            display: flex;
+            margin-left: 150px;
+            gap: 20px;
+
         }
 
         .card {
             margin-top: 50px;
-            margin-left: 150px;
-            width: 260px;
-            height: 280px;
+            width: 280px;
+            height: 330px;
             padding: 25px;
             border: 2px solid rgb(176, 175, 175);
-            border-radius: 7px;
+            border-radius: 10px;
             background-color: white;
             display: flex;
             flex-direction: column;
@@ -145,13 +155,39 @@
             gap: 12px;
         }
 
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 0 10px black;
+            border: #0F2A44 2px solid;
+            transition: .3s;
+            cursor: pointer;
+
+        }
+
         .logo {
-            width: 70px;
-            height: 70px;
+            margin-top: 15px;
+            width: 90px;
+            height: 90px;
             border-radius: 50%;
-            object-fit: contain;
-            padding: 2px;
-            background-color: #eee;
+            background-color: #e8f5e9;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 45px;
+        }
+
+        .text-room {
+            margin-top: 18px;
+            font-size: 20px;
+            font-weight: 600;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .text1-room {
+            font-family: 'Poppins', sans-serif;
+            font-weight: normal;
+            font-size: 13px;
+            margin-top: -7px;
         }
     </style>
 </head>
@@ -159,7 +195,7 @@
 <body>
     <div>
         <section class="menu1">
-            <img src="foto1.jpg" width="100%" height="850vh" />
+            <img src="minh-tr-n-0va0keIu3Lw-unsplash.jpg" width="100%" height="850vh" />
             <div class="text">
                 <h1 class="text-menu1">Selamat Datang di</h1>
                 <h1 class="text1-menu1">Bali Koi Tours</h1>
@@ -170,7 +206,6 @@
                 <button class="hubungi-kami">Hubungi Kami</button>
             </div>
         </section>
-        <!-- <hr style="border: rgb(230, 226, 226) 2px solid; box-shadow: 0 0 10px white;"> -->
 
         <div class="konten">
             <div class="gambar-konten">
@@ -180,8 +215,26 @@
                 <h3 class="text2-konten">Kami menyediakan layanan wisata yang fleksibel, transparan, dan berfokus pada
                     kenyamanan perjalanan.</h3>
 
-                <div class="card">
-                    <img src="logo.png" class="logo"></img>
+
+                <div class="room">
+                    <div class="card">
+                        <div class="logo">✅</div>
+                        <h4 class="text-room">Paket Wisata Lengkap</h4>
+                        <h5 class="text1-room">Kami menyediakan berbagai pilihan paket wisata ke destinasi favorit di
+                            Bali, mulai dari wisata alam, budaya, hingga pantai.</h5>
+                    </div>
+                    <div class="card">
+                        <div class="logo">👤</div>
+                        <h4 class="text-room">Pemandu Profesional</h4>
+                        <h5 class="text1-room">Perjalanan Anda akan didampingi oleh pemandu dan driver berpengalaman
+                            yang ramah, komunikatif, dan memahami rute serta kondisi wisata di Bali.</h5>
+                    </div>
+                    <div class="card">
+                        <div class="logo">🚙</div>
+                        <h4 style="margin-top: 18px; font-size: 17px; font-weight: 600; font-family: 'Poppins', sans-serif;">Mobil Nyaman & Bersih</h4>
+                        <h5 style="font-family: 'Poppins', sans-serif;font-weight: normal;font-size: 13px;margin-top: -2px;">Setiap mobil dirawat secara berkala untuk memastikan kenyamanan dan
+                            keamanan Anda selama perjalanan.</h5>
+                    </div>
                 </div>
             </div>
         </div>
