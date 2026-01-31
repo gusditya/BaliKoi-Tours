@@ -16,14 +16,24 @@
             box-sizing: border-box;
         }
 
+        section {
+            margin: 0;
+            padding: 0;
+        }
+
+        h1,h2,h3,h4,h5 {
+            margin: 0;
+        }
+
         .menu1 {
             object-fit: cover;
             object-position: center;
             display: block;
             position: relative;
             width: 100%;
-            height: 820px;
+            height: 100vh;
             overflow: hidden;
+            background: url('minh-tr-n-0va0keIu3Lw-unsplash.jpg') center / cover no-repeat;
         }
 
         .text {
@@ -98,18 +108,22 @@
             color: black;
         }
 
-        .gambar-konten {
-            width: 100%;
-            height: 700px;
+        .konten {
             background: linear-gradient(to right, #0F2A44 0%, #0f2a44b2 40%, #0f2a442a 100%), url('bg.jpg');
             background-size: cover;
             background-position: center;
+        }
+
+        .gambar-konten {
+            width: 100%;
+            background-size: cover;
+            background-position: center;
             background-repeat: no-repeat;
-            position: absolute;
+            position: relative;
         }
 
         .text-konten {
-            margin-top: 125px;
+            padding-top: 125px;
             margin-left: 145px;
             font-weight: normal;
             font-size: 45px;
@@ -135,6 +149,7 @@
         .room {
             flex-direction: row;
             display: flex;
+            padding-bottom: 150px;
             margin-left: 150px;
             gap: 20px;
 
@@ -157,7 +172,7 @@
 
         .card:hover {
             transform: translateY(-5px);
-            box-shadow: 0 0 10px black;
+            box-shadow: 6px 5px 5px 0 #000000;
             border: #0F2A44 2px solid;
             transition: .3s;
             cursor: pointer;
@@ -189,56 +204,82 @@
             font-size: 13px;
             margin-top: -7px;
         }
+
+        .konten1 {
+            width: 100%;
+            min-height: 100vh;
+        }
+
+        .gambar-konten1 {
+            min-height: 100vh;
+            background: linear-gradient(to right,rgb(255, 255, 255),rgba(255, 255, 255, 0.87),rgba(255, 255, 255, 0.695), rgba(255, 255, 255, 0.377)), url('konten1.jpg');
+
+            background-size: cover;
+            background-position: center;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding-bottom: 60px;
+        }
     </style>
 </head>
 
 <body>
-    <div>
-        <section class="menu1">
-            <img src="minh-tr-n-0va0keIu3Lw-unsplash.jpg" width="100%" height="850vh" />
-            <div class="text">
-                <h1 class="text-menu1">Selamat Datang di</h1>
-                <h1 class="text1-menu1">Bali Koi Tours</h1>
-                <h2 class="paket-liburan">Paket Liburan Seru di Bali</h2>
-                <h3 class="text-hal1">Nah kita ada paket wisata yang meriah dan lengkap</h3>
-                <h3 class="text-hal2">untuk melihat keindahan bali</h3>
-                <button class="paket-wisata">Paket Wisata</button>
-                <button class="hubungi-kami">Hubungi Kami</button>
-            </div>
-        </section>
+    <section class="menu1">
+        <div class="text">
+            <h1 class="text-menu1">Selamat Datang di</h1>
+            <h1 class="text1-menu1">Bali Koi Tours</h1>
+            <h2 class="paket-liburan">Paket Liburan Seru di Bali</h2>
+            <h3 class="text-hal1">Nah kita ada paket wisata yang meriah dan lengkap</h3>
+            <h3 class="text-hal2">untuk melihat keindahan bali</h3>
+            <button class="paket-wisata">Paket Wisata</button>
+            <button class="hubungi-kami">Hubungi Kami</button>
+        </div>
+    </section>
 
-        <div class="konten">
-            <div class="gambar-konten">
-                <h1 class="text-konten">Kenapa Memilih Bali Koi Tours?</h1>
-                <h3 class="text1-konten">Bali Koi Tours hadir untuk membantu Anda menikmati liburan di Bali dengan lebih
-                    nyaman dan terencana.</h3>
-                <h3 class="text2-konten">Kami menyediakan layanan wisata yang fleksibel, transparan, dan berfokus pada
-                    kenyamanan perjalanan.</h3>
+    <section class="konten">
+        <div class="gambar-konten">
+            <h1 class="text-konten">Kenapa Memilih Bali Koi Tours?</h1>
+            <h3 class="text1-konten">Bali Koi Tours hadir untuk membantu Anda menikmati liburan di Bali dengan lebih
+                nyaman dan terencana.</h3>
+            <h3 class="text2-konten">Kami menyediakan layanan wisata yang fleksibel, transparan, dan berfokus pada
+                kenyamanan perjalanan.</h3>
 
 
-                <div class="room">
-                    <div class="card">
-                        <div class="logo">✅</div>
-                        <h4 class="text-room">Paket Wisata Lengkap</h4>
-                        <h5 class="text1-room">Kami menyediakan berbagai pilihan paket wisata ke destinasi favorit di
-                            Bali, mulai dari wisata alam, budaya, hingga pantai.</h5>
-                    </div>
-                    <div class="card">
-                        <div class="logo">👤</div>
-                        <h4 class="text-room">Pemandu Profesional</h4>
-                        <h5 class="text1-room">Perjalanan Anda akan didampingi oleh pemandu dan driver berpengalaman
-                            yang ramah, komunikatif, dan memahami rute serta kondisi wisata di Bali.</h5>
-                    </div>
-                    <div class="card">
-                        <div class="logo">🚙</div>
-                        <h4 style="margin-top: 18px; font-size: 17px; font-weight: 600; font-family: 'Poppins', sans-serif;">Mobil Nyaman & Bersih</h4>
-                        <h5 style="font-family: 'Poppins', sans-serif;font-weight: normal;font-size: 13px;margin-top: -2px;">Setiap mobil dirawat secara berkala untuk memastikan kenyamanan dan
-                            keamanan Anda selama perjalanan.</h5>
-                    </div>
+            <div class="room">
+                <div class="card">
+                    <div class="logo">✅</div>
+                    <h4 class="text-room">Paket Wisata Lengkap</h4>
+                    <h5 class="text1-room">Kami menyediakan berbagai pilihan paket wisata ke destinasi favorit di
+                        Bali, mulai dari wisata alam, budaya, hingga pantai.</h5>
+                </div>
+                <div class="card">
+                    <div class="logo">👤</div>
+                    <h4 class="text-room">Pemandu Profesional</h4>
+                    <h5 class="text1-room">Perjalanan Anda akan didampingi oleh pemandu dan driver berpengalaman
+                        yang ramah, komunikatif, dan memahami rute serta kondisi wisata di Bali.</h5>
+                </div>
+                <div class="card">
+                    <div class="logo">🚙</div>
+                    <h4
+                        style="margin-top: 18px; font-size: 17px; font-weight: 600; font-family: 'Poppins', sans-serif;">
+                        Mobil Nyaman & Bersih</h4>
+                    <h5
+                        style="font-family: 'Poppins', sans-serif;font-weight: normal;font-size: 13px;margin-top: -2px;">
+                        Setiap mobil dirawat secara berkala untuk memastikan kenyamanan dan
+                        keamanan Anda selama perjalanan.</h5>
                 </div>
             </div>
         </div>
-    </div>
+    </section>
+
+    <section class="konten1">
+        <div class="gambar-konten1">
+            <h1>Paket Wisata Populer</h1>
+            <h4>Jelajah berbagai paket wisata di Bali dengan Bali Koi Tours.</h4>
+        </div>
+    </section>
 </body>
 
 </html>
