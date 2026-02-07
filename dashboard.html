@@ -37,24 +37,25 @@
             width: 100%;
             height: 100vh;
             overflow: hidden;
-            background: url('minh-tr-n-0va0keIu3Lw-unsplash.jpg') center / cover no-repeat;
+            background: linear-gradient(rgba(0, 0, 0, 0.286)), url('minh-tr-n-0va0keIu3Lw-unsplash.jpg') center / cover no-repeat;
         }
 
         .text {
             position: absolute;
-            top: 20%;
-            left: 13%;
+            top: 25%;
+            left: 8%;
             color: rgb(255, 255, 255);
         }
 
         .text-menu1 {
-            font-size: 65px;
+            font-size: 50px;
             font-weight: normal;
             font-family: 'Playfair Display', serif;
         }
 
         .text1-menu1 {
-            font-size: 75px;
+            margin-top: -8px;
+            font-size: 70px;
             font-weight: bold;
             font-family: 'Playfair Display', serif;
         }
@@ -62,21 +63,21 @@
         .paket-liburan {
             font-size: 30px;
             font-weight: normal;
-            margin-top: 25px;
+            margin-top: 15px;
             font-family: 'Poppins', sans-serif;
         }
 
         .text-hal1 {
-            font-size: 20px;
-            margin-top: 25px;
-            font-weight: normal;
+            font-size: 18px;
+            margin-top: 15px;
+            font-weight: 400;
             font-family: 'Poppins', sans-serif;
         }
 
         .text-hal2 {
-            font-size: 20px;
+            font-size: 18px;
             margin-top: 7px;
-            font-weight: normal;
+            font-weight: 400;
             font-family: 'Poppins', sans-serif;
         }
 
@@ -113,80 +114,102 @@
         }
 
         .konten {
-            background: linear-gradient(to right, #0F2A44 0%, #0f2a44b2 40%, #0f2a442a 100%), url('bg.jpg');
+            background-color: rgb(247, 255, 247);
             background-size: cover;
             background-position: center;
         }
 
-        .gambar-konten {
+        /* .gambar-konten {
             width: 100%;
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
             position: relative;
-        }
+        } */
 
         .text-konten {
-            padding-top: 125px;
-            margin-left: 145px;
-            font-weight: normal;
+            text-align: center;
+            padding-top: 110px;
+            font-weight: bold;
             font-size: 45px;
-            color: white;
+            color: #1c5821;
         }
 
         .text1-konten {
+            text-align: center;
             margin-top: 20px;
             font-weight: normal;
-            margin-left: 145px;
-            font-size: 18px;
-            color: white;
+            font-size: 15px;
+            color: rgb(97, 97, 97);
+            font-family: 'Poppins', sans-serif;
         }
 
         .text2-konten {
+            text-align: center;
             margin-top: 5px;
             font-weight: normal;
-            margin-left: 145px;
-            font-size: 18px;
-            color: white;
+            font-size: 15px;
+            color: rgb(97, 97, 97);
+            font-family: 'Poppins', sans-serif;
         }
 
         .room {
             flex-direction: row;
             display: flex;
             padding-bottom: 150px;
-            margin-left: 150px;
             gap: 20px;
+            justify-content: center;
+            align-items: center;
 
         }
 
         .card {
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
             margin-top: 50px;
-            width: 235px;
-            min-height: 275px;
-            padding: 25px;
-            border: 2px solid rgb(176, 175, 175);
-            border-radius: 10px;
+            width: 320px;
+            min-height: 315px;
+            padding: 40px 30px;
+            border-radius: 15px;
             background-color: white;
             display: flex;
+            position: relative;
+            overflow: hidden;
             flex-direction: column;
             align-items: center;
             text-align: center;
-            gap: 12px;
+            gap: 12px;  
+        }
+
+        .card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 5px;
+            background: linear-gradient(to right, #40b038, #8fce00);
+            transform: scaleX(0);
+            transition: transform 0.6s ease;
+            transform-origin: left;
+        }
+
+        .card:hover::before {
+            transform: scaleX(1);
         }
 
         .card:hover {
-            transform: translateY(-5px);
-            box-shadow: 6px 5px 5px 0 #000000;
-            border: #0F2A44 2px solid;
-            transition: .3s;
+            transform: translateY(-10px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.21);
+            transition: .6s;
             cursor: pointer;
-
         }
 
-        .logo {
+        .logo1,
+        .logo2,
+        .logo3 {
             margin-top: 15px;
-            width: 60px;
-            height: 60px;
+            width: 80px;
+            height: 80px;
             border-radius: 50%;
             background-color: #e8f5e9;
             display: flex;
@@ -194,28 +217,49 @@
             justify-content: center;
             font-size: 30px;
             line-height: 1;
-            border: 2px solid black;
+            border: none;
             flex-shrink: 0;
+            transition: 0.3s;
         }
 
-        .logo img {
+        .logo1 img,
+        .logo2 img,
+        .logo3 img {
             width: 100%;
             height: 100%;
             object-fit: contain;
         }
 
+        .card:hover .logo1 {
+            background: rgb(77, 201, 77);
+            transform: rotateY(180deg);
+            content: url('putar1.png');
+        }
+
+        .card:hover .logo2 {
+            background: rgb(77, 201, 77);
+            transform: rotateY(180deg);
+            content: url('putar2.png');
+        }
+
+        .card:hover .logo3 {
+            background: rgb(77, 201, 77);
+            transform: rotateY(180deg);
+            content: url('putar3.png');
+        }
 
         .text-room {
             margin-top: 14px;
-            font-size: 16px;
-            font-weight: 600;
+            font-size: 20px;
+            font-weight: bold;
             font-family: 'Poppins', sans-serif;
         }
 
         .text1-room {
             font-family: 'Poppins', sans-serif;
-            font-weight: normal;
-            font-size: 12px;
+            font-weight: bold;
+            color: #767676;
+            font-size: 13px;
             margin-top: -7px;
         }
 
@@ -233,17 +277,18 @@
         }
 
         .paket {
-            padding-top: 50px;
-            padding-left: 170px;
-            font-weight: 500;
-            font-size: 45px;
+            padding-top: 30px;
+            padding-left: 100px;
+            font-weight: bold;
+            font-size: 47px;
         }
 
         .deskripsi-paket {
-            margin-left: 170px;
+            margin-left: 100px;
             margin-top: 10px;
             font-weight: normal;
             font-family: 'Poppins', sans-serif;
+            color: #767676;
         }
 
         .paket-gabungan {
@@ -251,8 +296,15 @@
             flex-direction: row;
         }
 
+        .card-paket1:hover {
+            transform: translateY(-5px);
+            transition: .3s;
+            box-shadow: none;
+            cursor: pointer;
+        }
+
         .paket1 {
-            width: 250px;
+            width: 270px;
             height: 220px;
             border-top-right-radius: 10px;
             border-top-left-radius: 10px;
@@ -261,10 +313,9 @@
             object-fit: cover;
         }
 
-        .paket2,
-        .paket3,
-        .paket4 {
-            width: 250px;
+        .paket2 {
+            box-shadow: 12px 10px 28px -2px rgb(255, 255, 255);
+            width: 270px;
             height: 220px;
             border-top-right-radius: 10px;
             border-top-left-radius: 10px;
@@ -274,40 +325,47 @@
         }
 
         .text-paket1 {
-            font-size: 20px;
+            font-size: 18.5px;
             margin-top: 20px;
             font-family: 'Poppins', serif;
             margin-left: 15px;
-            font-weight: 600;
+            font-weight: 700;
         }
 
         .text-paket2 {
-            font-size: 20px;
+            font-size: 17px;
             font-family: 'Poppins', serif;
+            margin-top: 5px;
             margin-left: 15px;
             font-weight: 600;
+            color: rgb(11, 131, 43);
         }
 
         .card1 {
+            box-shadow: 12px 10px 28px -2px rgb(255, 255, 255);
             background-color: rgb(255, 255, 255);
             border: 2px solid rgba(159, 159, 159, 0.364);
             border-bottom-left-radius: 10px;
             border-bottom-right-radius: 10px;
-            width: 250px;
+            width: 270px;
             height: 250px;
             margin-left: 170px;
             margin-top: -5px;
         }
 
         .text-card1 {
-            font-weight: normal;
+            font-family: 'Poppins', sans-serif;
+            font-size: 12px;
+            font-weight: 500;
             margin-top: 10px;
             margin-left: 15px;
             color: #4d4d4d;
         }
 
         .text1-card1 {
-            font-weight: normal;
+            font-family: 'Poppins', sans-serif;
+            font-size: 12px;
+            font-weight: 500;
             margin-top: 2px;
             margin-left: 15px;
             color: #4d4d4d;
@@ -315,7 +373,7 @@
 
         .IDR {
             color: rgb(155, 132, 0);
-            margin-left: 10px;
+            margin-left: 16px;
             font-size: 17px;
             font-weight: 600;
         }
@@ -334,7 +392,7 @@
 
         .btm-card {
             margin-top: 10px;
-            margin-left: 10px;
+            margin-left: 20px;
             font-size: 15px;
             font-weight: 600;
             color: white;
@@ -350,31 +408,35 @@
         }
 
         .text-card2 {
-            font-size: 20px;
+            font-size: 18.5px;
             margin-top: 20px;
             font-family: 'Poppins', serif;
             margin-left: 15px;
-            font-weight: 600;
+            font-weight: 700;
         }
 
         .text1-card2 {
-            font-size: 20px;
+            font-size: 17px;
             font-family: 'Poppins', serif;
+            margin-top: 5px;
             margin-left: 15px;
             font-weight: 600;
+            color: rgb(11, 131, 43);
         }
 
         .text2-card2 {
-            font-weight: normal;
+            font-family: 'Poppins', sans-serif;
+            font-size: 12px;
+            font-weight: 500;
             margin-top: 7px;
             margin-left: 15px;
             color: #4d4d4d;
-            line-height: 1.3;
+            line-height: 1.5;
         }
 
         .IDR1 {
             color: rgb(155, 132, 0);
-            margin-left: 15px;
+            margin-left: 16px;
             font-size: 17px;
             font-weight: 600;
         }
@@ -392,8 +454,25 @@
         }
 
         .btm-card2 {
-            margin-top: 10px;
-            margin-left: 15px;
+            margin-top: 8px;
+            margin-left: 20px;
+            font-size: 15px;
+            font-weight: 600;
+            color: white;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background-color: rgb(19, 127, 19);
+            width: 220px;
+            height: 37px;
+            border-radius: 6px;
+            font-family: 'Poppins', sans-serif;
+            display: flex;
+        }
+
+        .btm-card3 {
+            margin-top: 6px;
+            margin-left: 20px;
             font-size: 15px;
             font-weight: 600;
             color: white;
@@ -409,10 +488,12 @@
         }
 
         .card2 {
+            box-shadow: 12px 10px 28px 22px rgb(255, 255, 255);
+            background-color: white;
             border: 2px solid rgba(159, 159, 159, 0.364);
             border-bottom-left-radius: 10px;
             border-bottom-right-radius: 10px;
-            width: 250px;
+            width: 270px;
             height: 250px;
             margin-top: -5px;
             margin-left: 30px;
@@ -436,8 +517,8 @@
             <h1 class="text-menu1">Selamat Datang di</h1>
             <h1 class="text1-menu1">Bali Koi Tours</h1>
             <h2 class="paket-liburan">Paket Liburan Seru di Bali</h2>
-            <h3 class="text-hal1">Nah kita ada paket wisata yang meriah dan lengkap</h3>
-            <h3 class="text-hal2">untuk melihat keindahan bali</h3>
+            <h3 class="text-hal1">Nikmati paket wisata meriah dan lengkap</h3>
+            <h3 class="text-hal2">untuk melihat keindahan pulau dewata.</h3>
             <button class="paket-wisata">Paket Wisata</button>
             <button class="hubungi-kami">Hubungi Kami</button>
         </div>
@@ -446,14 +527,13 @@
     <section class="konten">
         <div class="gambar-konten">
             <h1 class="text-konten">Kenapa Memilih Bali Koi Tours?</h1>
-            <h3 class="text1-konten">Bali Koi Tours hadir untuk membantu Anda menikmati liburan di Bali dengan lebih
-                nyaman dan terencana.</h3>
-            <h3 class="text2-konten">Kami menyediakan layanan wisata yang fleksibel, transparan, dan berfokus pada
-                kenyamanan perjalanan.</h3>
+            <h3 class="text1-konten">Bali Koi Tours hadir untuk membantu Anda menikmati liburan di Bali dengan lebih nyaman. 
+                Kami</h3>
+            <h3 class="text2-konten">mengutamakan transparansi, fleksibilitas, dan pelayanan terbaik.</h3>
 
             <div class="room">
                 <div class="card">
-                    <div class="logo">
+                    <div class="logo1">
                         <img src="logo1.png">
                     </div>
                     <h4 class="text-room">Paket Wisata Lengkap</h4>
@@ -461,22 +541,22 @@
                         Bali, mulai dari wisata alam, budaya, hingga pantai.</h5>
                 </div>
                 <div class="card">
-                    <div class="logo">
+                    <div class="logo2">
                         <img src="logo2.png">
                     </div>
                     <h4 class="text-room">Pemandu Profesional</h4>
                     <h5 class="text1-room">Perjalanan Anda akan didampingi oleh pemandu dan driver berpengalaman
-                        yang ramah, komunikatif, dan memahami rute serta kondisi wisata di Bali.</h5>
+                        yang ramah, komunikatif, serta wisata di Bali.</h5>
                 </div>
                 <div class="card">
-                    <div class="logo">
+                    <div class="logo3">
                         <img src="logo3.png">
                     </div>
                     <h4
-                        style="margin-top: 16px; font-size: 14px; font-weight: 600; font-family: 'Poppins', sans-serif;">
+                        style="margin-top: 16px; font-size: 20px; font-weight: bold; font-family: 'Poppins', sans-serif;">
                         Mobil Nyaman & Bersih</h4>
                     <h5
-                        style="font-family: 'Poppins', sans-serif;font-weight: normal;font-size: 12px;margin-top: -2px;">
+                        style="font-family: 'Poppins', sans-serif;font-weight: bold;font-size: 13px;margin-top: -2px; color: #767676;">
                         Setiap mobil dirawat secara berkala untuk memastikan kenyamanan dan
                         keamanan Anda selama perjalanan.</h5>
                 </div>
@@ -490,7 +570,7 @@
             <h4 class="deskripsi-paket">Jelajah berbagai paket wisata di Bali dengan Bali Koi Tours.</h4>
             <div class="paket-gabungan">
 
-                <div class="card-paket">
+                <div class="card-paket1">
                     <img src="paket1.png" class="paket1">
                     <div class="card1">
                         <h3 class="text-paket1">Paket Wisata</h3>
@@ -509,8 +589,8 @@
                     <div class="card2">
                         <h3 class="text-card2">Paket Wisata</h3>
                         <h3 class="text1-card2">Nusa Penida</h3>
-                        <h5 class="text2-card2">Jelajahi keindahan pulau Nusa Penida dengan pemandangan tebing ikonik dan pantai eksotis</h5>
-                        <div style="margin-top: 7px;">
+                        <h5 class="text2-card2">Jelajahi keindahan pulau Nusa Penida dengan pemandangan tebing ikonik.</h5>
+                        <div style="margin-top: 30px;">
                             <span class="IDR1">IDR <span class="harga1">700,000<span class="person1">/person</span></span></span>
                         </div>
                         <h2 class="btm-card2">Lihat Detail</h2>
@@ -521,17 +601,28 @@
                     <img src="paket3.png" class="paket2">
                     <div class="card2">
                         <h3 class="text-card2">Paket Wisata</h3>
-                        <h3 class="text1-card2">Nusa Penida</h3>
-                        <h5 class="text2-card2">Jelajahi keindahan pulau Nusa Penida dengan pemandangan tebing ikonik dan pantai eksotis</h5>
-                        <div style="margin-top: 7px;">
-                            <span class="IDR1">IDR <span class="harga1">700,000<span class="person1">/person</span></span></span>
+                        <h3 class="text1-card2">Bedugul & Danau</h3>
+                        <h5 class="text2-card2">Kunjungan ke dataran tinggi Bedugul dan Danau Beratan yang sejuk.</h5>
+                        <div style="margin-top: 30px;">
+                            <span class="IDR1">IDR <span class="harga1">600,000<span class="person1">/person</span></span></span>
                         </div>
                         <h2 class="btm-card2">Lihat Detail</h2>
                     </div>
                 </div>
 
-
-                
+                <div class="card-paket1">
+                    <img src="paket4.png" class="paket2">
+                    <div class="card2">
+                        <h3 class="text-card2">Paket Wisata</h3>
+                        <h3 class="text1-card2">Uluwatu Sunset</h3>
+                        <h5 class="text2-card2">Wisata sore menuju kawasan tebing Uluwatu dengan pemandangan laut lepas.</h5>
+                        <div style="margin-top: 13px;">
+                            <span class="IDR1">IDR <span class="harga1">500,000<span class="person1">/person</span></span></span>
+                        </div>
+                        <h2 class="btm-card3">Lihat Detail</h2>
+                    </div>
+                </div>
+  
             </div>
         </div>
     </section>
