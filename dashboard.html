@@ -8,7 +8,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
-
     <style>
         * {
             margin: 0;
@@ -27,6 +26,10 @@
         h4,
         h5 {
             margin: 0;
+        }
+
+        html {
+            scroll-behavior: smooth;
         }
 
         .menu1 {
@@ -77,11 +80,14 @@
         .text-hal2 {
             font-size: 18px;
             margin-top: 7px;
+            margin-bottom: 40px;
             font-weight: 400;
             font-family: 'Poppins', sans-serif;
         }
 
         .paket-wisata {
+            font-family: 'Poppins', sans-serif;
+            text-decoration: none;
             border: none;
             border-radius: 7px;
             padding: 13.2px 45px;
@@ -94,10 +100,13 @@
         }
 
         .hubungi-kami {
+            font-family: 'Poppins',sans-serif;
+            background-color: white;
+            color: black;
             border: none;
             padding: 13.2px 45px;
             font-size: 15px;
-            font-weight: 600;
+            font-weight: bold;
             border-radius: 7px;
             margin-left: 15px;
             cursor: pointer;
@@ -119,13 +128,12 @@
             background-position: center;
         }
 
-        /* .gambar-konten {
-            width: 100%;
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-            position: relative;
-        } */
+        /* .gambar-konten { 
+        width: 100%; 
+        background-size: cover; 
+        background-position: center; 
+        background-repeat: no-repeat; 
+        position: relative; } */
 
         .text-konten {
             text-align: center;
@@ -160,7 +168,6 @@
             gap: 20px;
             justify-content: center;
             align-items: center;
-
         }
 
         .card {
@@ -177,7 +184,7 @@
             flex-direction: column;
             align-items: center;
             text-align: center;
-            gap: 12px;  
+            gap: 12px;
         }
 
         .card::before {
@@ -391,6 +398,7 @@
         }
 
         .btm-card {
+            text-decoration: none;
             margin-top: 10px;
             margin-left: 20px;
             font-size: 15px;
@@ -454,6 +462,7 @@
         }
 
         .btm-card2 {
+            text-decoration: none;
             margin-top: 8px;
             margin-left: 20px;
             font-size: 15px;
@@ -471,6 +480,7 @@
         }
 
         .btm-card3 {
+            text-decoration: none;
             margin-top: 6px;
             margin-left: 20px;
             font-size: 15px;
@@ -501,14 +511,13 @@
 
         /* BOTTOM */
         .btm-card:hover,
-        .btm-card2:hover
-        {
+        .btm-card2:hover {
             background-color: rgb(26, 75, 26);
             cursor: pointer;
         }
 
         .gambar-konten2 {
-            background: linear-gradient(to right,#013305da 0%,rgba(6, 50, 6, 0.762)20%, rgba(141, 170, 141, 0)100%), url('konten2.jpg');
+            background: linear-gradient(to right, #013305da 0%, rgba(6, 50, 6, 0.762)20%, rgba(141, 170, 141, 0)100%), url('konten2.jpg');
             width: 100%;
             height: 80vh;
             object-fit: cover;
@@ -527,7 +536,7 @@
 
         .sewa-mobil1 {
             font-family: 'Poppins', sans-serif;
-            color:#d2d2d2;
+            color: #d2d2d2;
             font-weight: normal;
             margin-left: 180px;
             margin-top: 10px;
@@ -592,13 +601,79 @@
             font-family: 'Poppins', sans-serif;
             font-size: 18px;
             color: white;
-            background-color: #0e530a;
+            background-color: #267822;
             text-align: center;
-            width: 150px;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            width: 250px;
             height: 50px;
-            border-radius: 10px;
+            border-radius: 7px;
+            margin-left: 10px;
+            margin-top: 8px;
         }
 
+        .selengkapnya:hover {
+            background-color: #1c5821;
+            cursor: pointer;
+        }
+
+        .tripadvisor {
+            width: 100%;
+            min-height: 65vh;
+            background: linear-gradient(rgba(197, 197, 197, 0.69) 0%, rgba(255, 255, 255, 0.718) 20%), url('background.png');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        .logo-tripadvisor {
+            width: 17%;
+            height: 17%;
+            margin-top: 115px;
+            margin-left: 140px;
+        }
+
+        .judul-trip {
+            font-family: 'Poppins', sans-serif;
+            font-size: 27px;
+            margin-left: 450px;
+            margin-top: -250px;
+        }
+
+        .text-tripadvisor {
+            font-weight: 500;
+            font-family: 'Poppins', sans-serif;
+            font-size: 15px;
+            width: 1000px;
+            margin-top: 20px;
+            margin-left: 450px;
+            line-height: 1.8;
+        }
+
+        .HubungiKami {
+            display: inline-flex;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;
+            font-weight: bold;
+            margin-left: 1250px;
+            margin-top: 24px;
+            font-family: 'Poppins', sans-serif;
+            font-size: 15px;
+            color: white;
+            background-color: #558a2b;
+            height: 40px;
+            width: 170px;
+            border-radius: 6px;
+        }
+
+        .HubungiKami:hover {
+            background-color: #406721;
+            color: #d2d2d2;
+            cursor: pointer;
+        }
     </style>
 </head>
 
@@ -610,57 +685,52 @@
             <h2 class="paket-liburan">Paket Liburan Seru di Bali</h2>
             <h3 class="text-hal1">Nikmati paket wisata meriah dan lengkap</h3>
             <h3 class="text-hal2">untuk melihat keindahan pulau dewata.</h3>
-            <button class="paket-wisata">Paket Wisata</button>
-            <button class="hubungi-kami">Hubungi Kami</button>
+            <a href="#paketwisata" class="paket-wisata">Paket Wisata</a>
+            <a class="hubungi-kami">Hubungi Kami</a>
         </div>
     </section>
 
     <section class="konten">
         <div class="gambar-konten">
             <h1 class="text-konten">Kenapa Memilih Bali Koi Tours?</h1>
-            <h3 class="text1-konten">Bali Koi Tours hadir untuk membantu Anda menikmati liburan di Bali dengan lebih nyaman. 
-                Kami</h3>
+            <h3 class="text1-konten">Bali Koi Tours hadir untuk membantu Anda menikmati liburan di Bali dengan lebih
+                nyaman. Kami</h3>
             <h3 class="text2-konten">mengutamakan transparansi, fleksibilitas, dan pelayanan terbaik.</h3>
 
             <div class="room">
                 <div class="card">
-                    <div class="logo1">
-                        <img src="logo1.png">
-                    </div>
+                    <div class="logo1"> <img src="logo1.png"> </div>
                     <h4 class="text-room">Paket Wisata Lengkap</h4>
-                    <h5 class="text1-room">Kami menyediakan berbagai pilihan paket wisata ke destinasi favorit di
-                        Bali, mulai dari wisata alam, budaya, hingga pantai.</h5>
+                    <h5 class="text1-room">Kami menyediakan berbagai pilihan paket wisata ke destinasi favorit di Bali,
+                        mulai dari wisata alam, budaya, hingga pantai.</h5>
                 </div>
+
                 <div class="card">
-                    <div class="logo2">
-                        <img src="logo2.png">
-                    </div>
+                    <div class="logo2"> <img src="logo2.png"> </div>
                     <h4 class="text-room">Pemandu Profesional</h4>
-                    <h5 class="text1-room">Perjalanan Anda akan didampingi oleh pemandu dan driver berpengalaman
-                        yang ramah, komunikatif, serta wisata di Bali.</h5>
+                    <h5 class="text1-room">Perjalanan Anda akan didampingi oleh pemandu dan driver berpengalaman yang
+                        ramah, komunikatif, serta wisata di Bali.</h5>
                 </div>
+
                 <div class="card">
-                    <div class="logo3">
-                        <img src="logo3.png">
-                    </div>
+                    <div class="logo3"> <img src="logo3.png"> </div>
                     <h4
                         style="margin-top: 16px; font-size: 20px; font-weight: bold; font-family: 'Poppins', sans-serif;">
                         Mobil Nyaman & Bersih</h4>
                     <h5
                         style="font-family: 'Poppins', sans-serif;font-weight: bold;font-size: 13px;margin-top: -2px; color: #767676;">
-                        Setiap mobil dirawat secara berkala untuk memastikan kenyamanan dan
-                        keamanan Anda selama perjalanan.</h5>
+                        Setiap mobil dirawat secara berkala untuk memastikan kenyamanan dan keamanan Anda selama
+                        perjalanan.</h5>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="konten1">
+    <section class="konten1" id="paketwisata">
         <div class="gambar-konten1">
             <h1 class="paket">Paket Wisata Populer</h1>
             <h4 class="deskripsi-paket">Jelajah berbagai paket wisata di Bali dengan Bali Koi Tours.</h4>
             <div class="paket-gabungan">
-
                 <div class="card-paket1">
                     <img src="paket1.png" class="paket1">
                     <div class="card1">
@@ -669,9 +739,10 @@
                         <h5 class="text-card1">Wisata alam dan budaya dalam</h5>
                         <h5 class="text1-card1">satu perjalanan harian yang seimbang.</h5>
                         <div style="margin-top: 22px;">
-                            <span class="IDR">IDR <span class="harga">600,000<span class="person">/person</span></span></span>
+                            <span class="IDR">IDR <span class="harga">600,000<span
+                                        class="person">/person</span></span></span>
                         </div>
-                        <h2 class="btm-card">Lihat Detail</h2>
+                        <a href="kintamani.html" class="btm-card">Lihat Detail</a>
                     </div>
                 </div>
 
@@ -680,11 +751,13 @@
                     <div class="card2">
                         <h3 class="text-card2">Paket Wisata</h3>
                         <h3 class="text1-card2">Nusa Penida</h3>
-                        <h5 class="text2-card2">Jelajahi keindahan pulau Nusa Penida dengan pemandangan tebing ikonik.</h5>
+                        <h5 class="text2-card2">Jelajahi keindahan pulau Nusa Penida dengan pemandangan tebing ikonik.
+                        </h5>
                         <div style="margin-top: 30px;">
-                            <span class="IDR1">IDR <span class="harga1">700,000<span class="person1">/person</span></span></span>
+                            <span class="IDR1">IDR <span class="harga1">700,000<span
+                                        class="person1">/person</span></span></span>
                         </div>
-                        <h2 class="btm-card2">Lihat Detail</h2>
+                        <a href="nusapenida.html" class="btm-card2">Lihat Detail</a>
                     </div>
                 </div>
 
@@ -695,9 +768,10 @@
                         <h3 class="text1-card2">Bedugul & Danau</h3>
                         <h5 class="text2-card2">Kunjungan ke dataran tinggi Bedugul dan Danau Beratan yang sejuk.</h5>
                         <div style="margin-top: 30px;">
-                            <span class="IDR1">IDR <span class="harga1">600,000<span class="person1">/person</span></span></span>
+                            <span class="IDR1">IDR <span class="harga1">600,000<span
+                                        class="person1">/person</span></span></span>
                         </div>
-                        <h2 class="btm-card2">Lihat Detail</h2>
+                        <a href="bedugul.html" class="btm-card2">Lihat Detail</a>
                     </div>
                 </div>
 
@@ -706,14 +780,15 @@
                     <div class="card2">
                         <h3 class="text-card2">Paket Wisata</h3>
                         <h3 class="text1-card2">Uluwatu Sunset</h3>
-                        <h5 class="text2-card2">Wisata sore menuju kawasan tebing Uluwatu dengan pemandangan laut lepas.</h5>
+                        <h5 class="text2-card2">Wisata sore menuju kawasan tebing Uluwatu dengan pemandangan laut lepas.
+                        </h5>
                         <div style="margin-top: 13px;">
-                            <span class="IDR1">IDR <span class="harga1">500,000<span class="person1">/person</span></span></span>
+                            <span class="IDR1">IDR <span class="harga1">500,000<span
+                                        class="person1">/person</span></span></span>
                         </div>
-                        <h2 class="btm-card3">Lihat Detail</h2>
+                        <a href="uluwatu.html" class="btm-card3">Lihat Detail</a>
                     </div>
                 </div>
-  
             </div>
         </div>
     </section>
@@ -721,11 +796,9 @@
     <div class="gambar-konten2">
         <h1 class="sewa-mobil">Layanan Sewa Mobil</h1>
         <h3 class="sewa-mobil1">Sewa mobil di Bali dengan sopir profesional dan harga terjangkau</h3>
-
         <div class="paket-mobil">
             <div class="gambar3">
-                <img src="paket mobil.png" class="mobil">
-                <img src="surfing.png" class="surfing">
+                <img src="paket mobil.png" class="mobil"> <img src="surfing.png" class="surfing">
             </div>
             <div class="card-mobil">
                 <div class="email-tour">
@@ -739,6 +812,18 @@
                 </div>
             </div>
         </div>
+    </div>
+
+    <div class="tripadvisor">
+        <img src="tripadvisor.png" class="logo-tripadvisor">
+        <h1 class="judul-trip">Traveler`s Choice Awards</h1>
+        <h3 class="text-tripadvisor">Bali Koi Tours dengan bangga menerima Tripadvisor Travelers Choice Awards,
+            penghargaan yang diberikan kepada bisnis pariwisata dengan ulasan dan tingkat kepuasan pelanggan yang
+            konsisten tinggi. Penilaian ini berasal dari pengalaman nyata para wisatawan yang telah menggunakan layanan
+            kami, sehingga menjadi cerminan langsung kualitas pelayanan di lapangan. Penghargaan tersebut menunjukkan
+            komitmen kami dalam menyediakan perjalanan yang aman, nyaman, dan terorganisir dengan baik di setiap paket
+            tour dan layanan sewa mobil.</h3>
+        <a href="hubungikami.html" class="HubungiKami">Hubungi Kami</a>
     </div>
 </body>
 
