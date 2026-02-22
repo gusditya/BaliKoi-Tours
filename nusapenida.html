@@ -1,11 +1,183 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Nusa Penida</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Allura&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+
+        .beranda {
+            color: #c3c3c3;
+            font-size: 14px;
+            padding-left: 110px;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 100;
+            text-decoration: none;
+        }
+
+        .beranda:hover {
+            color: #ffffff;
+        }
+
+        .tanda {
+            color: #c3c3c3;
+            font-size: 12px;
+            padding-left: 10px;
+            font-weight: 500;
+        }
+
+        .beranda1 {
+            color: #c3c3c3;
+            font-size: 14px;
+            padding-left: 10px;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 100;
+            text-decoration: none;
+        }
+
+        .beranda1:hover {
+            color: #ffffff;
+        }
+
+        .halaman1 {
+            background: linear-gradient(to bottom right, rgb(20, 64, 92) 0%, rgba(36, 84, 100, 0.905) 10%, rgba(41, 161, 129, 0.582) 25%, rgba(255, 255, 255, 0) 50%), url('background/nusapenida.png');
+            background-size: cover;
+            object-fit: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            width: 100%;
+            height: 100vh;
+        }
+
+        .text-hal1 {
+            color: #ffffff;
+            font-size: 80px;
+            font-family: 'Allura', cursive;
+            font-weight: 500;
+            padding-left: 110px;
+            padding-top: 90px;
+            margin-bottom: 0;
+            display: block;
+        }
+
+        .text1-hal1 {
+            color: #d6bb75;
+            text-shadow: 1px 4px 4px rgba(6, 6, 6, 0.58);
+            font-size: 80px;
+            padding-left: 110px;
+            font-family: 'Playfair Display', serif;
+            font-weight: 700;
+            margin-top: -25px;
+        }
+
+        .text2-hal1 {
+            color: #f5f5f5;
+            font-size: 20px;
+            padding-left: 110px;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 300;
+            margin-top: 20px;
+            width: 600px;
+            line-height: 1.8;
+        }
+
+        .NusaPenida {
+            color: #ffffff;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 700;
+        }
+
+        .pesan-sekarang {
+            display: inline-block;
+            padding: 12px 50px;
+            background: linear-gradient(#16a2a0e0 30%, #13548ad9 100%);
+            color: #ffffff;
+            font-size: 22px;
+            font-weight: 700;
+            border-radius: 70px;
+            text-decoration: none;
+            margin-left: 110px;
+            margin-top: 30px;
+            font-family: 'Playfair Display', serif;
+        }
+
+        .halaman2 {
+            background-image: url('background/background1.png');
+            width: 100%;
+            height: 100vh;
+            background-size: cover;
+            margin-top: -115px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .halaman3 {
+            background-image: url('background/background2.png');
+            width: 100%;
+            height: 130vh;
+            margin-top: -240px;
+            background-size: cover;
+            position: relative;
+            z-index: 0;
+        }
+
+        .transisi-bg {
+            width: 500px;
+            height: 500px;
+            object-fit: cover;
+            margin-top: 580px;
+            margin-left: -160px;
+        }
+
+        .transisi-bg1 {
+            width: 500px;
+            height: 500px;
+            object-fit: cover;
+            margin-top: 580px;
+            margin-left: 880px;
+            position: absolute;
+        }
+    </style>
 </head>
+
 <body>
-    
+    <div class="halaman1">
+        <div style="padding-top: 15px;">
+            <a href="dashboard.html" class="beranda">Beranda<a class="tanda"> > </a><a href="#" class="beranda1"> Paket
+                    Wisata Nusa Penida</a></a>
+        </div>
+        <h1 class="text-hal1">Paket Wisata</h1>
+        <h1 class="text1-hal1">Nusa Penida</h1>
+        <h4 class="text2-hal1">Jelajahi keindahan eksotis <span class="NusaPenida">Pulau Nusa Penida</span> yang menakjubkan bersama Bali Koi Tours yang terpercaya dan berpengalaman</h4>
+        <a class="pesan-sekarang">Pesan Sekarang</a>
+    </div>
+
+    <section class="halaman2">
+        <div>
+            <img src="background/transisi.png" class="transisi-bg">
+            <img src="background/transisi.png" class="transisi-bg1">
+        </div>
+    </section>
+
+    <section class="halaman3">
+
+    </section>
 </body>
+
 </html>
