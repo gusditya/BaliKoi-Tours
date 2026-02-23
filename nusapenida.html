@@ -131,17 +131,16 @@
             background-image: url('background/background2.png');
             width: 100%;
             height: 130vh;
-            margin-top: -240px;
+            margin-top: -300px;
             background-size: cover;
             position: relative;
-            z-index: 0;
         }
 
         .transisi-bg {
             width: 500px;
             height: 500px;
             object-fit: cover;
-            margin-top: 580px;
+            margin-top: 490px;
             margin-left: -160px;
         }
 
@@ -152,6 +151,145 @@
             margin-top: 580px;
             margin-left: 880px;
             position: absolute;
+        }
+
+        .foto-wrapper {
+            position: relative;
+            width: 100%;
+            margin-top: -850px;
+            margin-left: 390px;
+        }
+
+        .materi {
+            width: 400px;
+            height: 300px;
+            object-fit: cover;
+            display: block;
+            margin: 0 auto;
+            border: 10px solid #ffffff;
+            box-shadow: 7px -4px 55px -16px rgba(0, 0, 0, 0.72);
+            border-radius: 10px;
+            transform: rotate(2deg);
+            position: relative;
+            z-index: 0;
+        }
+
+        .materi1 {
+            position: absolute;
+            width: 280px;
+            height: 360px;
+            object-fit: cover;
+            border: 10px solid #ffffff;
+            border-radius: 20px;
+            box-shadow: 7px -4px 55px -16px rgba(0, 0, 0, 0.72);
+            left: calc(50% - 380px);
+            top: 150px;
+            z-index: 1;
+        }
+
+        .materi2 {
+            position: absolute;
+            width: 350px;
+            height: 270px;
+            object-fit: cover;
+            border: 10px solid #ffffff;
+            border-radius: 20px;
+            box-shadow: 7px -4px 55px -16px rgba(0, 0, 0, 0.72);
+            left: calc(42% + 5px);
+            top: 280px;
+            z-index: 1;
+            transform: rotate(5deg);
+        }
+
+        .text-hal2 {
+            color: #464646;
+            font-size: 45px;
+            font-weight: 700;
+            margin-top: -250px;
+            margin-left: 150px;
+        }
+
+        .desc-hal2 {
+            color: #5a5a5a;
+            font-size: 22px;
+            font-weight: 300;
+            margin-top: 20px;
+            margin-left: 150px;
+            width: 500px;
+            line-height: 1.8;
+        }
+
+        .card1 {
+            background-color: #ffffff47;
+            width: 490px;
+            height: 140px;
+            border-radius: 20px;
+            box-shadow: 7px -4px 55px -16px rgba(0, 0, 0, 0.72);
+            margin-top: 50px;
+            margin-left: 150px;
+            padding: 20px;
+            position: relative;
+        }
+
+        .tect-card1 {
+            color: #464646;
+            font-size: 23px;
+            font-weight: 700;
+            margin-top: 4px;
+            margin-left: 50px;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .desc-card1 {
+            color: #5a5a5a;
+            font-size: 23px;
+            font-weight: 300;
+            margin-top: 7px;
+            margin-left: 50px;
+            width: 350px;
+        }
+
+        .ikon {
+            width: 50px;
+            height: 50px;
+            position: absolute;
+            margin-left: -8px;
+        }
+
+        .card2 {
+            background-color: #ffffff47;
+            width: 490px;
+            height: 140px;
+            border-radius: 20px;
+            box-shadow: 7px -4px 55px -16px rgba(0, 0, 0, 0.72);
+            margin-top: 30px;
+            margin-left: 150px;
+            padding: 20px;
+            position: relative;
+        }
+
+        .tect-card2 {
+            color: #464646;
+            font-size: 23px;
+            font-weight: 700;
+            margin-top: 4px;
+            margin-left: 50px;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .desc-card2 {
+            color: #5a5a5a;
+            font-size: 23px;
+            font-weight: 300;
+            margin-top: 7px;
+            margin-left: 50px;
+            width: 400px;
+        }
+
+        .card1:hover,
+        .card2:hover {
+            transform: translateY(-5px);
+            transition: 0.3s ease;
         }
     </style>
 </head>
@@ -164,14 +302,36 @@
         </div>
         <h1 class="text-hal1">Paket Wisata</h1>
         <h1 class="text1-hal1">Nusa Penida</h1>
-        <h4 class="text2-hal1">Jelajahi keindahan eksotis <span class="NusaPenida">Pulau Nusa Penida</span> yang menakjubkan bersama Bali Koi Tours yang terpercaya dan berpengalaman</h4>
+        <h4 class="text2-hal1">Jelajahi keindahan eksotis <span class="NusaPenida">Pulau Nusa Penida</span> yang
+            menakjubkan bersama Bali Koi Tours yang terpercaya dan berpengalaman</h4>
         <a class="pesan-sekarang">Pesan Sekarang</a>
     </div>
 
     <section class="halaman2">
-        <div>
+        <div class="images">
             <img src="background/transisi.png" class="transisi-bg">
             <img src="background/transisi.png" class="transisi-bg1">
+        </div>
+
+        <div class="foto-wrapper">
+            <img src="background/materi.png" class="materi">
+            <img src="background/materi1.png" class="materi1">
+            <img src="background/materi2.png" class="materi2">
+        </div>
+
+        <h2 class="text-hal2">Detail Perjalanan</h2>
+        <p class="desc-hal2">Siap-siap mengelilingi Nusa Penida dalam sehari yang penuh keindahan. Temukan keajaiban-keajaiban alam khas Nusa Penida yang tak terlupakan berikut ini:</p>
+
+        <div class="card1">
+            <img src="assets/ikon tanda.png" class="ikon">
+            <h2 class="tect-card1">Kelingking Beach</h2>
+            <p class="desc-card1">Pantai dengan tebik ikonik berbentuk T-rex</p>
+        </div>
+
+        <div class="card2">
+            <img src="assets/ikon tanda.png" class="ikon">
+            <h2 class="tect-card2">Angel's Billabong & broken Beach</h2>
+            <p class="desc-card2">Kolam alami & pantai unik dengan tebing berlubang</p>
         </div>
     </section>
 
