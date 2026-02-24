@@ -20,6 +20,7 @@
             margin: 0;
             padding: 0;
             background-color: #f5f5f5;
+            overflow-x: hidden;
         }
 
         .beranda {
@@ -130,10 +131,11 @@
         .halaman3 {
             background-image: url('background/background2.png');
             width: 100%;
-            height: 130vh;
-            margin-top: -300px;
+            height: 100vh;
             background-size: cover;
+            margin-top: -115px;
             position: relative;
+            overflow: hidden;
         }
 
         .transisi-bg {
@@ -291,6 +293,274 @@
             transform: translateY(-5px);
             transition: 0.3s ease;
         }
+
+        .judul-highlight {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            padding-top: 230px;
+        }
+
+        /* judul */
+        .text-hal3 {
+            color: #464646;
+            font-size: 45px;
+            font-weight: 700;
+            text-align: center;
+            margin: 0;
+        }
+
+        /* daun kiri */
+        .hiasan-daun1 {
+            width: 60px;
+            height: auto;
+            transform: scaleX(-1);
+        }
+
+        /* daun kanan */
+        .hiasan-daun2 {
+            width: 60px;
+            height: auto;
+        }
+
+        .card {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: row;
+            gap: 20px;
+        }
+
+        .card1-hal3 {
+            background-color: #dedede2b;
+            width: 350px;
+            height: 330px;
+            border-radius: 20px;
+            box-shadow: 7px -4px 55px -16px rgba(0, 0, 0, 0.72);
+            margin-top: 30px;
+            padding: 20px;
+            z-index: 1;
+        }
+
+        .img-card1 {
+            width: 315px;
+            height: 170px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .text-card1-hal3 {
+            color: #336231;
+            font-size: 25px;
+            font-weight: 700;
+            margin-top: 7px;
+            font-family: 'Playfair Display', sans-serif;
+            text-align: center;
+        }
+
+        .desc-card1-hal3 {
+            color: #5a5a5a;
+            font-size: 20px;
+            font-weight: 300;
+            margin-top: 15px;
+            width: 300px;
+            text-align: center;
+        }
+
+        .img-card2 {
+            width: 257px;
+            height: 170px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .card2-hal3 {
+            background-color: #ffffff47;
+            width: 300px;
+            height: 330px;
+            border-radius: 20px;
+            box-shadow: 7px -4px 55px -16px rgba(0, 0, 0, 0.72);
+            margin-top: 30px;
+            padding: 20px;
+        }
+
+        .desc-card2-hal3 {
+            color: #5a5a5a;
+            font-size: 20px;
+            font-weight: 300;
+            margin-top: 10px;
+            width: 250px;
+            text-align: center;
+        }
+
+        .img-card3 {
+            width: 304px;
+            height: 170px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .card3-hal3 {
+            background-color: #ffffff47;
+            width: 350px;
+            height: 330px;
+            border-radius: 20px;
+            box-shadow: 7px -4px 55px -16px rgba(0, 0, 0, 0.72);
+            margin-top: 30px;
+            padding: 20px;
+        }
+
+        .desc-card3-hal3 {
+            color: #5a5a5a;
+            font-size: 20px;
+            font-weight: 300;
+            margin-top: 7px;
+            width: 320px;
+            text-align: center;
+            margin-left: -5px;
+        }
+
+        .img-card4 {
+            width: 260px;
+            height: 170px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .card4-hal3 {
+            background-color: #ffffff47;
+            width: 300px;
+            height: 330px;
+            border-radius: 20px;
+            box-shadow: 7px -4px 55px -16px rgba(0, 0, 0, 0.72);
+            margin-top: 30px;
+            padding: 20px;
+            z-index: 1;
+        }
+
+        .desc-card4-hal3 {
+            color: #5a5a5a;
+            font-size: 20px;
+            font-weight: 300;
+            margin-top: 4px;
+            width: 270px;
+            text-align: center;
+            margin-left: -5px;
+        }
+
+        .hiasanbawah {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            pointer-events: none;
+        }
+
+        .hiasan {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 250px;
+            opacity: 0.8;
+            filter: brightness(0.8);
+        }
+
+        .hiasan1 {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: 250px;
+            transform: scaleX(-1);
+            opacity: 0.8;
+            filter: brightness(0.8);
+        }
+
+        .hiasan3 {
+            position: absolute;
+            bottom: 0;
+            width: 200px;
+            transform: scaleX(-1);
+            opacity: 0.8;
+            filter: brightness(0.8);
+            left: 0;
+            z-index: 0;
+            margin-bottom: 40px;
+        }
+
+        .hiasan2 {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: 200px;
+            opacity: 0.8;
+            filter: brightness(0.8);
+            margin-bottom: 40px;
+        }
+
+        .card1,
+        .card2 {
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+
+        .card1:hover,
+        .card2:hover {
+            transform: translateY(-10px) translateX(5px);
+            background-color: #ffffff;
+            box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.15);
+            border-left: 5px solid #16a2a0e0;
+        }
+
+        /* Gabungkan selector untuk semua card di halaman 3 agar codingan rapi */
+        .card1-hal3,
+        .card2-hal3,
+        .card3-hal3,
+        .card4-hal3 {
+            position: relative;
+            overflow: hidden;
+            /* Penting untuk memotong cahaya yang lewat */
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        /* Membuat elemen cahaya buatan */
+        .card1-hal3::before,
+        .card2-hal3::before,
+        .card3-hal3::before,
+        .card4-hal3::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            /* Mulai dari luar kiri */
+            width: 50%;
+            height: 100%;
+            background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.4) 50%, rgba(255, 255, 255, 0) 100%);
+            transform: skewX(-25deg);
+            /* Miringkan cahaya */
+            transition: 0.5s;
+            z-index: 2;
+            pointer-events: none;
+        }
+
+        /* Saat di-hover */
+        .card1-hal3:hover,
+        .card2-hal3:hover,
+        .card3-hal3:hover,
+        .card4-hal3:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+            /* Bayangan lebih dalam */
+        }
+
+        /* Jalankan cahaya dari kiri ke kanan saat hover */
+        .card1-hal3:hover::before,
+        .card2-hal3:hover::before,
+        .card3-hal3:hover::before,
+        .card4-hal3:hover::before {
+            left: 125%;
+            /* Bergerak sampai keluar kanan */
+            transition: 0.7s ease-in-out;
+        }
     </style>
 </head>
 
@@ -320,7 +590,8 @@
         </div>
 
         <h2 class="text-hal2">Detail Perjalanan</h2>
-        <p class="desc-hal2">Siap-siap mengelilingi Nusa Penida dalam sehari yang penuh keindahan. Temukan keajaiban-keajaiban alam khas Nusa Penida yang tak terlupakan berikut ini:</p>
+        <p class="desc-hal2">Siap-siap mengelilingi Nusa Penida dalam sehari yang penuh keindahan. Temukan
+            keajaiban-keajaiban alam khas Nusa Penida yang tak terlupakan berikut ini:</p>
 
         <div class="card1">
             <img src="assets/ikon tanda.png" class="ikon">
@@ -336,7 +607,43 @@
     </section>
 
     <section class="halaman3">
+        <div class="judul-highlight">
+            <img src="assets/hiasan1.png" class="hiasan-daun1">
+            <h2 class="text-hal3">Highlight Pengalaman</h2>
+            <img src="assets/hiasan1.png" class="hiasan-daun2">
+        </div>
 
+        <div class="card">
+            <div class="card1-hal3">
+                <img src="background/card1.png" class="img-card1">
+                <h2 class="text-card1-hal3">Kelingking Cliff View</h2>
+                <p class="desc-card1-hal3">Foto di tebing T-rex ikonik dengan view laut spektakuler</p>
+            </div>
+            <div class="card2-hal3">
+                <img src="background/card2.png" class="img-card2">
+                <h2 class="text-card1-hal3">pantai Eksotis</h2>
+                <p class="desc-card2-hal3">Jelajahi pantai-pantai indah seperti Broken Beach dan Angel's Billabong</p>
+            </div>
+            <div class="card3-hal3">
+                <img src="background/card3.png" class="img-card3">
+                <h2 class="text-card1-hal3">Snorkeling Seru</h2>
+                <p class="desc-card3-hal3">Nikmati tambahan snorkeling di spot terbaik untuk melihat terumbu karang dan
+                    ikan tropis</p>
+            </div>
+            <div class="card4-hal3">
+                <img src="background/card4.png" class="img-card4">
+                <h2 class="text-card1-hal3">Fotografi & Video</h2>
+                <p class="desc-card4-hal3">Dokumentasi momen indahmu dengan fotografer profesional, termasuk drone
+                    footage</p>
+            </div>
+        </div>
+
+        <div class="hiasanbawah">
+            <img src="assets/hiasan.png" class="hiasan">
+            <img src="assets/hiasan.png" class="hiasan1">
+            <img src="assets/hiasan3.png" class="hiasan2">
+            <img src="assets/hiasan3.png" class="hiasan3">
+        </div>
     </section>
 </body>
 
