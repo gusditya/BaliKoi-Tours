@@ -498,69 +498,117 @@
             margin-bottom: 40px;
         }
 
-        .card1,
-        .card2 {
-            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-        }
+        @media (max-width: 768px) {
+            .halaman1 {
+                background: linear-gradient(to bottom right, rgb(20, 64, 92) 0%, rgba(36, 84, 100, 0.905) 10%, rgba(41, 161, 129, 0.582) 25%, rgba(255, 255, 255, 0) 50%), url('background/nusapenida.png');
+                background-size: cover;
+                object-fit: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+                width: 100%;
+                height: 700px;
+            }
 
-        .card1:hover,
-        .card2:hover {
-            transform: translateY(-10px) translateX(5px);
-            background-color: #ffffff;
-            box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.15);
-            border-left: 5px solid #16a2a0e0;
-        }
+            .beranda {
+                font-size: 12px;
+                padding-left: 50px;
+                padding-top: 10px;
+            }
 
-        /* Gabungkan selector untuk semua card di halaman 3 agar codingan rapi */
-        .card1-hal3,
-        .card2-hal3,
-        .card3-hal3,
-        .card4-hal3 {
-            position: relative;
-            overflow: hidden;
-            /* Penting untuk memotong cahaya yang lewat */
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
+            .beranda1 {
+                font-size: 12px;
+                padding-top: 10px;
+            }
 
-        /* Membuat elemen cahaya buatan */
-        .card1-hal3::before,
-        .card2-hal3::before,
-        .card3-hal3::before,
-        .card4-hal3::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: -100%;
-            /* Mulai dari luar kiri */
-            width: 50%;
-            height: 100%;
-            background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.4) 50%, rgba(255, 255, 255, 0) 100%);
-            transform: skewX(-25deg);
-            /* Miringkan cahaya */
-            transition: 0.5s;
-            z-index: 2;
-            pointer-events: none;
-        }
+            .text-hal1 {
+                font-size: 55px;
+                padding-left: 60px;
+                padding-top: 100px;
+            }
 
-        /* Saat di-hover */
-        .card1-hal3:hover,
-        .card2-hal3:hover,
-        .card3-hal3:hover,
-        .card4-hal3:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
-            /* Bayangan lebih dalam */
-        }
+            .text1-hal1 {
+                font-size: 55px;
+                padding-left: 50px;
+                margin-top: -20px;
+            }
 
-        /* Jalankan cahaya dari kiri ke kanan saat hover */
-        .card1-hal3:hover::before,
-        .card2-hal3:hover::before,
-        .card3-hal3:hover::before,
-        .card4-hal3:hover::before {
-            left: 125%;
-            /* Bergerak sampai keluar kanan */
-            transition: 0.7s ease-in-out;
+            .text2-hal1 {
+                font-size: 16px;
+                padding-left: 50px;
+                width: 450px;
+            }
+
+            .pesan-sekarang {
+                padding: 10px 40px;
+                font-size: 18px;
+                margin-left: 50px;
+                margin-top: 20px;
+            }
+
+            .halaman2 {
+                background-image: url('background/background1.png');
+                width: 100%;
+                height: 700px;
+                background-size: cover;
+                margin-top: -115px;
+                position: relative;
+                z-index: 1;
+            }
+
+            .text-hal2 {
+                font-size: 40px;
+                margin-top: -380px;
+                margin-left: 60px;
+            }
+
+            .desc-hal2 {
+                font-size: 18px;
+                margin-top: 15px;
+                margin-left: 60px;
+                width: 400px;
+            }
+
+            .transisi-bg {
+                width: 400px;
+                height: 400px;
+                margin-top: 450px;
+                margin-left: -100px;
+            }
+
+            .materi {
+                width: 270px;
+                height: 200px;
+                object-fit: cover;
+                display: block;
+                margin: 0;
+                margin-left: -200px;
+                margin-top: 350px;
+            }
+
+            .materi1 {
+                width: 200px;
+                height: 260px;
+                margin-left: -280px;
+                margin-top: -20px;
+            }
+
+            .materi2 {
+                width: 230px;
+                height: 190px;
+                left: -150px;
+                top: 150px;
+            }
+
+            .halaman3 {
+                background-image: url('background/background2.png');
+                width: 100%;
+                height: 700px;
+                background-size: cover;
+                margin-top: -115px;
+                position: relative;
+                overflow: hidden;
         }
+    }
     </style>
 </head>
 
